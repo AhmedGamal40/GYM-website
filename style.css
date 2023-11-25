@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Assistant:wght@300;400;500;600&family=Gabarito:wght@400;500;600&family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;600&family=Roboto+Condensed:wght@300;400&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-family: 'Gabarito' , cursive;
+    font-family: 'Inclusive Sans' , sans-serif;
+    font-family: 'Space Grotest' , sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2)
+    0px 7px 29px 0px;
+}
+
+.logo{
+    color: #FC6C85;
+    font-size: 30px;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 10px 8px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #777;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #FC6C85;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background-color: #e22746;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 27px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #2a2929;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.icon , .address{
+    color: #777;
+    font-size: 20px;
+}
+
+.icon i{
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    color: #e22746;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 13%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 33px;
+    color: #FC6C85;
+}
+
+.row{
+    background-image: linear-gradient(rgb(4 3 3 /60%) , rgb(0 0 0 /33%)), url(image/gym1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    color: white;
+}
+
+.content h1{
+    font-size: 40px;
+    padding: 12px 0;
+}
+
+.content h1 span{
+    color: #e22746;
+}
+
+/* ---------------features----------------- */
+
+.sec{
+    background-color: #2a2929;
+    text-align: center;
+    padding: 3% 0;
+    color: white;
+}
+.sec p{
+    color: #777;
+    /* text-align: start;
+    padding: 10px; */
+}
+.boxes{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 3% 0;
+    color: white;
+}
+.box i{
+    background-color: #e22746;
+    border-radius: 50%;
+    padding: 5%;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+/* --------building----------- */
+
+.left{
+    background-color: black;
+    text-align: right;
+    padding: 3%;
+}
+.right{
+    background-color: red;
+    text-align: left;
+    padding: 3%;
+}
+.box h1{
+    font-size: 35px;
+}
+
+.sec .para{
+    color: white;
+}
+
+/* --------footer----------- */
+
+.f-sec{
+    background-color: #181515f5;
+    color: white;
+    padding: 3% 0;
+}
+.footer{
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
+}
+.f-box{
+    flex-basis: 25%;
+}
+.f-box li{
+    list-style: none;
+    padding: 7px 0;
+}
+.f-box h2{
+    color: #e22746;
+    padding-bottom: 12px;
+}
+.f-box i , .testi i{
+    background-color: #e22746;
+    border-radius: 50%;
+    padding: 2%;
+    font-size: 20px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+.f-box i:hover , .testi i:hover{
+    background-color: #2a2929;
+    color: #e22746;
+}
+.f-box input , button{
+    padding: 8px;
+    margin-top: 12px;
+    outline: none;
+}
+.f-box button{
+    color: white;
+    background-color: #e22746;
+    border: none;
+    cursor: pointer;
+}
+.f-box button:hover{
+    letter-spacing: 2px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* ----------------about Page----------------- */
+
+.row-2{
+    background-image: linear-gradient(rgb(4 3 3 /60%) , rgb(0 0 0 /35%)), url(image/gym2.jpg);
+}
+.Aboxes{
+    display: flex;
+}
+.Abox{
+    padding: 3%;
+}
+.Abox h1{
+    padding: 8px 0;
+}
+.Abox i{
+    font-size: 35px;
+}
+.Aboxes div:nth-child(1){
+    color: white;
+    text-align: right;
+    background-color: #e22746;
+}
+.Aboxes div:nth-child(2){
+    text-align: center;
+    background-color: #bdb2b2;
+}
+.Aboxes div:nth-child(2) h1{
+    color: #e22746;
+}
+.Aboxes div:nth-child(3){
+    color: white;
+    text-align: left;
+    background-color: #e22746;
+    background-color: #1c1b1b;
+}
+
+/* ----------------benefits----------------- */
+.B-box{
+    display: flex;
+    align-items: center;
+    margin-bottom:3% ;
+}
+.B-box img{
+    width: 200px;
+    height: 150px;
+}
+.B-box div{
+    text-align: left;
+    padding: 15px;
+}
+
+/* ------------------info------------------- */
+
+.info{
+    background-color: #1c1b1b;
+    padding: 5% 0;
+}
+.img{
+    width: 50%;
+}
+.img img{
+    width: 100%;
+    height: 500px;
+}
+.cont{
+    width: 50%;
+    text-align: left;
+    margin-left: 2%;
+    padding-left: 4%;
+}
+.cont h1{
+    font-size: 40px;
+}
+.cont_info{
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    margin-left: 3%;
+}
+.cont_info h2{
+    color: #e22746;
+    padding: 8% 0;
+}
+.cont_info i{
+    font-size: 35px;
+    align-items: center;
+}
+.cont_info button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+/* ------------------contact------------------- */
+
+.Bbox{
+    text-align: left;
+    padding: 0 3%;
+}
+.Bbox img{
+    width: 100%;
+    height: 350px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 8px 0;
+}
+.blog i{
+    color: white;
+    background-color: #e22746;
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.btn1{
+    background-color: #e22746;
+}
+.btn1:hover{
+    background-color: #777;
+    letter-spacing: 2px;
+}
+/* -----------------testimaonal--------------------- */
+
+.testi h1{
+    padding: 1% 0;
+}
+.testi p{
+    padding-right: 8%;
+}
+.testi_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.testi_con{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.testi_con div{
+    padding-left: 12px;
+}
+.testi_con img{
+    border-radius: 50%;
+    height: 100px;
+}
+/* -----------------form--------------------- */
+.form{
+    width: 40%;
+    margin: auto;
+}
+.form input , textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    border-radius: 12px;
+    /* background-color: #777; */
+    border: none;
+    color: #777;
+}
+.form::placeholder{
+    color: #bdb2b2;
+}
+
+/* -------media query---------------- */
+@media only screen and (max-width:870px){
+    .burger{
+        display: block;
+    }
+    .navbar{
+        height: 400px;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: all 0.8s ease-out;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        padding: 3% 0;
+    }
+    .navbar li {
+        display: block;
+    }
+    .h-class{
+        height: 78px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .boxes{
+        width: 90%;
+    }
+    .B-box div{
+        padding: 7px;
+    }
+    .cont{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width:730px){
+    .boxes{
+        flex-direction: column;
+    }
+    .box , .f-box{
+        padding-top: 3%;
+    }
+    .footer , .Aboxes{
+        flex-direction: column;
+    }
+    .img , .cont{
+        width: 100%;
+    }
+    .Bbox{
+        padding: 1% 3%;
+    }
+}
